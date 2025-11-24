@@ -1,0 +1,36 @@
+<!-- stats.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>QR 통계 보기</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { text-align: center; font-family: sans-serif; }
+        canvas { max-width: 600px; margin: 40px auto; }
+    </style>
+</head>
+<body>
+    <h1>📊 폴더별 QR 생성 통계</h1>
+    <canvas id="qrChart"></canvas>
+    <script>
+        const ctx = document.getElementById('qrChart').getContext('2d');
+        const qrChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['가족', '연인', '친구', '나'],
+                datasets: [{
+                    label: 'QR 생성 횟수',
+                    data: {{ counts | safe }}, // 예: [5, 3, 7, 2]
+                    backgroundColor: ['#f87171', '#fb923c', '#60a5fa', '#a78bfa']
+                }]
+            },
+            options: {
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

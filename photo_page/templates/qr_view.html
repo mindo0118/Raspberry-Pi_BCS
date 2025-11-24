@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR 코드 보기</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 30px; }
+        img { border: 2px solid #ccc; margin-top: 20px; max-width: 300px; height: auto; }
+        h2 { margin-bottom: 20px; }
+        button { font-size: 16px; padding: 10px 20px; margin-top: 20px; }
+
+    </style>
+</head>
+<body>
+    <h1>QR 코드가 생성되었습니다!</h1>
+    <img src="/static/qrcodes/{{ qr_filename }}" alt="QR Code">
+    <p>이 QR 코드를 스캔하면 사진을 확인할 수 있어요.</p>
+    
+    <form action="/" method="get" style="display:inline;"> 
+        <button type="submit">RETURN</button>
+    </form>
+</body>
+</html>

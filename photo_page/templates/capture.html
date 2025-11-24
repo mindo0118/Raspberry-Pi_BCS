@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>촬영 완료</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 30px; }
+        img { border: 2px solid #ccc; margin-bottom: 20px; max-width: 80%; height: auto; }
+        button { font-size: 16px; padding: 10px 20px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>사진이 촬영되었습니다!</h1>
+    <img src="/static/photos/{{ topic }}/{{ filename }}" alt="Captured Photo">
+
+    <form action="/qr_view" method="get">
+        <button type="submit">QR 코드 보기</button>
+    </form>
+    <form action="/" method="get" style="display:inline;"> 
+        <button type="submit">RETURN</button>
+    </form>
+</body>
+</html>

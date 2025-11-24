@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Camera - Select Topic</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 30px; }
+        video, img { border: 2px solid #ccc; margin-bottom: 20px; }
+        select, button { font-size: 16px; padding: 8px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Live Camera</h1>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+
+    <form action="/set_topic" method="POST">
+        <label for="topic">Choose topic:</label>
+        <select name="topic" id="topic" required>
+            <option value="family" {% if topic == 'family' %}selected{% endif %}>Family</option>
+            <option value="friend" {% if topic == 'friend' %}selected{% endif %}>Friend</option>
+            <option value="couple" {% if topic == 'couple' %}selected{% endif %}>Couple</option>
+            <option value="me" {% if topic == 'me' %}selected{% endif %}>Me</option>
+        </select>
+        <br>
+        <button type="submit">select topic</button>
+    </form>
+
+
+    <script>
+        function checkStatus() {
+            fetch('/status')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.done) {
+                        window.location.href = '/capture_result';
+                    }
+                });
+        }
+        setInterval(checkStatus, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!-- folders.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>사진 폴더 보기</title>
+    <style>
+        body { text-align: center; font-family: sans-serif; }
+        .folder-list { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 40px; }
+        .folder { border: 1px solid #ccc; border-radius: 10px; padding: 20px; width: 150px; cursor: pointer; text-decoration: none; color: black; }
+        .folder:hover { background-color: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h1>📁 사진 폴더 보기</h1>
+    <div class="folder-list">
+        <a class="folder" href="/folder/family">👪 가족</a>
+        <a class="folder" href="/folder/couple">💑 연인</a>
+        <a class="folder" href="/folder/friend">👫 친구</a>
+        <a class="folder" href="/folder/me">🙋 나</a>
+    </div>
+</body>
+</html>
