@@ -8,8 +8,25 @@ Raspberry Pi 3대를 활용한 분산 스마트 포토부스 시스템 — 촬�
 사용자에게 더 다양한 기능과 편의를 제공하기 위해 개발된 **차세대 스마트 사진 부스 시스템**입니다.  
 3대의 라즈베리파이를 기반으로 **촬영 · 웹 표시 · 통계 처리**를 분산하여 안정성과 확장성을 높인 것이 특징입니다.
 
+
+| https://github.com/user-attachments/assets/245de9b0-3def-4ded-bd83-9f99c2d21b21 | 
+
+https://github.com/user-attachments/assets/1ecc0e89-dcc7-4c47-adfe-5c4ee20880c8
+
+ |
+
+
 ---
 
+## 📦 프로젝트 구조 예시
+```
+/project
+├── pi1_camera_sender/
+├── pi2_receiver_web/
+├── pi3_controller_stats/
+└── README.md
+```
+---
 ## ✨ 주요 기능
 
 ### 📷 사용자 친화적 촬영 환경
@@ -46,11 +63,7 @@ Raspberry Pi 3대를 활용한 분산 스마트 포토부스 시스템 — 촬�
 
 ## 🏗 시스템 아키텍처 (3-Tier 분산 구조)
 
-| Raspberry Pi | 역할 |
-|---|---|
-| **Pi 1 — 촬영 & 전송** | 버튼·모터·OLED 제어, 카메라 촬영, base64 인코딩, MQTT 발행 |
-| **Pi 2 — 웹 서버 & 저장** | MQTT 수신, 디코딩, 토픽별 폴더 저장, 웹 갤러리/QR 생성 |
-| **Pi 3 — 관리자 기능 & 통계** | 서보·LED·OLED 추가 제어, QR 접속 횟수/저장 횟수 통계 페이지 (개발 중) |
+<img width="1271" height="640" alt="image" src="https://github.com/user-attachments/assets/57b9fd91-579a-4e15-88bc-8d17a1dd0725" />
 
 ---
 
@@ -60,7 +73,7 @@ Raspberry Pi 3대를 활용한 분산 스마트 포토부스 시스템 — 촬�
 | :------------: | :------------: | :------------: | 
 | <img src="https://github.com/user-attachments/assets/7d5b65b3-3751-4c6a-b4bc-69b742cc3053" width=180> |  <img src="https://github.com/user-attachments/assets/47ec901d-ee5e-4259-8d4b-064f10562f17" width=170> | <img src="https://github.com/user-attachments/assets/a2effb4f-3521-48f4-8d66-512d270aeead" width=160> |  
 | **github**: [mindo0118](https://github.com/mindo0118)|**github**: [double2-22](https://github.com/double2-22) | **github**: [gnujnim475](https://github.com/gnujnim475) |  
-| MQTT 통신, 디코딩·폴더 저장, LED/서보/OLED 제어 </br> ![Team%20Leader](https://img.shields.io/badge/-Team%20leader-yellow)  | 외형 제작, OLED 연결, base64/JSON 처리, QR 생성, 폴더 선택 UI | 외형 제작, 버튼/카메라 연결, base64/JSON 처리, 촬영·QR UI | 
+| ![Team%20Leader](https://img.shields.io/badge/-Team%20leader-yellow) </br>  MQTT 통신, 디코딩·폴더 저장, LED/서보/OLED 제어 | 외형 제작, OLED 연결, base64/JSON 처리, QR 생성, 폴더 선택 UI | 외형 제작, 버튼/카메라 연결, base64/JSON 처리, 촬영·QR UI | 
 ---
 
 ## 🔧 향후 개선 사항
@@ -73,26 +86,3 @@ Raspberry Pi 3대를 활용한 분산 스마트 포토부스 시스템 — 촬�
 
 ---
 
-## 📦 프로젝트 구조 예시
-```
-/project
-├── pi1_camera_sender/
-├── pi2_receiver_web/
-├── pi3_controller_stats/
-└── README.md
-```
-
----
-
-## 📸 데모 이미지 / 아키텍처 다이어그램
-> (시스템 구조 이미지나 시연 영상 GIF를 추가하면 완성도가 크게 높아집니다.)
-
----
-
-## 📄 라이선스
-MIT License (필요 시 수정 가능)
-
----
-
-### 👏 Contribution
-PR 및 Issue 환영합니다!
