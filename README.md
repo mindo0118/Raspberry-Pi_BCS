@@ -9,11 +9,13 @@ Raspberry Pi 3대를 활용한 분산 스마트 포토부스 시스템 — 촬�
 3대의 라즈베리파이를 기반으로 **촬영 · 웹 표시 · 통계 처리**를 분산하여 안정성과 확장성을 높인 것이 특징입니다.
 
 
-| https://github.com/user-attachments/assets/245de9b0-3def-4ded-bd83-9f99c2d21b21 | 
 
-https://github.com/user-attachments/assets/1ecc0e89-dcc7-4c47-adfe-5c4ee20880c8
+https://github.com/user-attachments/assets/8ed232bc-de7d-40d9-a751-6e81a2ef0ea3
 
- |
+
+
+https://github.com/user-attachments/assets/4859a81e-8bf6-415b-af7a-efd64069c073
+
 
 
 ---
