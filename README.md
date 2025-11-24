@@ -57,7 +57,7 @@ Raspberry Pi 3대를 활용한 분산 스마트 포토부스 시스템 — 촬�
 ## 👥 팀 구성 및 역할
 
 | **민도현** | **김다연**  |   **김민정**  |  
-| :------------: | :------------: | :------------: | :------------: |
+| :------------: | :------------: | :------------: | 
 | <img src="https://github.com/user-attachments/assets/7d5b65b3-3751-4c6a-b4bc-69b742cc3053" width=180> |  <img src="https://github.com/user-attachments/assets/47ec901d-ee5e-4259-8d4b-064f10562f17" width=170> | <img src="https://github.com/user-attachments/assets/a2effb4f-3521-48f4-8d66-512d270aeead" width=160> |  
 | **github**: [mindo0118](https://github.com/mindo0118)|**github**: [double2-22](https://github.com/double2-22) | **github**: [gnujnim475](https://github.com/gnujnim475) |  
 | MQTT 통신, 디코딩·폴더 저장, LED/서보/OLED 제어 </br> ![Team%20Leader](https://img.shields.io/badge/-Team%20leader-yellow)  | 외형 제작, OLED 연결, base64/JSON 처리, QR 생성, 폴더 선택 UI | 외형 제작, 버튼/카메라 연결, base64/JSON 처리, 촬영·QR UI | 
